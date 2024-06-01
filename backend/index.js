@@ -7,6 +7,13 @@ const app = express()
 // 5000 isliye kiya kyuki 3000 pr react chalegi to abhi iss problem ko solve krke chalo
 const port = 5000
 
+const corsOptions = {
+  origin: 'https://i-notebook-client.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true // enable credentials (cookies, authorization headers, etc.)
+};
+
 //routes ko esse bhi call kar sakte hai but diikat kya hogi yadi sabhi ko index.js mei daal denge to bahut saari files ho jayegi or fir kabhi error sahi krte samay bahut dikkat hogi isliye hm alag se route ka folder bana k rakhte hai 
 // app.get('/', (req, res) => {
 //   res.send('Hello Chiranshu!')
