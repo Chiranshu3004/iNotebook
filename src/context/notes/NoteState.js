@@ -18,7 +18,7 @@ const NoteState = (props) => {
 //     }, 1000);
 // }
 
-const host = "http://localhost:5000"
+const host = "https://i-notebook-backend-flax.vercel.app/"
 
 // yeh notesInitial fetch api se aayenge yeh to starting mei dikhane k liye yehi add kr diye tha
 // const notesInitial = [
