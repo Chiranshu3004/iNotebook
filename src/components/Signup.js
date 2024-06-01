@@ -23,7 +23,7 @@ const Signup = (props) => {
             // jaise login kiya auth token ko store karwa denge local storage k andar
             localStorage.setItem('token', json.authtoken); 
             // iska mtlb hau jab bhi submit button p click kare home page p bhej de
-            navigate("/");
+            navigate("/login");
             props.showAlert("Account Created Successfully","success");
 
         }
