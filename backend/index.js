@@ -5,7 +5,7 @@ var cors = require('cors')
 connectToMongo();
 const app = express()
 // 5000 isliye kiya kyuki 3000 pr react chalegi to abhi iss problem ko solve krke chalo
-const port = 5000
+// const port = https://i-notebook-client.vercel.app
 
 const corsOptions = {
   origin: 'https://i-notebook-client.vercel.app',
@@ -20,7 +20,7 @@ const corsOptions = {
 // })
 
 // yeh api ko client side mei fetch krne k liye use hoti hai
-// app.use(cors())
+// app.use(cors(corsOptions))
 // yadi mujhe req.body ko use karna hai  app.use(express.json()) likhna padeag
 app.use(express.json())
 
@@ -28,6 +28,6 @@ app.use(express.json())
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes', require('./routes/notes'))
 
-app.listen(port, () => {
-  console.log(`iNotebook backend listening on port ${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`iNotebook backend listening on port ${port}`)
+// })
