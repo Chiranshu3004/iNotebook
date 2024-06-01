@@ -20,7 +20,7 @@ const corsOptions = {
 // })
 
 // yeh api ko client side mei fetch krne k liye use hoti hai
-app.use(cors())
+// app.use(cors())
 // yadi mujhe req.body ko use karna hai  app.use(express.json()) likhna padeag
 app.use(express.json())
 
