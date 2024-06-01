@@ -8,7 +8,7 @@ const Login = (props) => {
     const handleSubmit= async(e) =>{
         e.preventDefault();
         // API CALL
-        const response = await fetch("https://i-notebook-backend-flax.vercel.app/", {
+        const response = await fetch("https://i-notebook-backend-flax.vercel.app//api/auth/login", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
